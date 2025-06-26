@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  gol-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: gol-frontend
+    restart: always
+    networks:
+      - lanza-net
+
+  gol-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: gol-backend
+    restart: always
+    ports:
+      - "5100:80"
+    networks:
+      - lanza-net
+
+networks:
+  lanza-net:

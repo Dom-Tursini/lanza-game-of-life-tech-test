@@ -1,0 +1,14 @@
+# Use official .NET 8 runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy published backend files into the container
+COPY backend/publish/ ./
+
+# Expose port 80 inside the container
+EXPOSE 80
+
+# Start the application
+ENTRYPOINT ["dotnet", "GameOfLifeBackend.dll"]
