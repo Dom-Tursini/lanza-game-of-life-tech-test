@@ -1,0 +1,52 @@
+<div class="controls-panel">
+  <button
+    class="btn"
+    [ngClass]="{ active: gameState === 'playing' }"
+    (click)="start()"
+  >
+    Start
+  </button>
+
+  <button
+    class="btn"
+    [ngClass]="{ active: gameState === 'stopped' }"
+    (click)="stop()"
+  >
+    Stop
+  </button>
+
+  <button
+    class="btn"
+    [ngClass]="{ active: gameState === 'reset' }"
+    (click)="reset()"
+  >
+    Reset
+  </button>
+
+  <div class="dropdown">
+    <label for="seed">Seed Pattern</label>
+    <select
+      id="seed"
+      [(ngModel)]="selectedSeed"
+      (change)="seedPatternChanged()"
+    >
+      <option value="Random">Random</option>
+      <option value="Glider">Glider</option>
+      <option value="Pulsar">Pulsar</option>
+      <option value="Angel">Angel</option>
+    </select>
+  </div>
+
+  <div class="dropdown">
+    <label for="grid">Grid Size</label>
+    <select
+      id="grid"
+      [(ngModel)]="selectedGridSize"
+      (change)="gridSizeChanged()"
+    >
+      <option value="64 x 36">64 x 36</option>
+      <option value="48 x 27">48 x 27</option>
+      <option value="32 x 18">32 x 18</option>
+    </select>
+  </div>
+</div>

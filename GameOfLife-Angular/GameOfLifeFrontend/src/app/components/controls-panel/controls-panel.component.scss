@@ -1,0 +1,43 @@
+.controls-panel {
+  min-width: 180px;
+  max-width: 240px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .btn {
+  width: 120px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: #006992;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &.active {
+    background-color: #E09E26;
+  }
+}
+
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    label {
+      margin-bottom: 4px;
+    }
+
+    select {
+      width: 140px;
+      padding: 6px;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+  }
+}

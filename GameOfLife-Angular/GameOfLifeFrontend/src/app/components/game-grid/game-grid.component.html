@@ -1,0 +1,24 @@
+<div class="grid-wrapper">
+  <div
+    class="grid"
+    [style.--rows]="grid.length"
+    [style.--cols]="grid[0].length"
+  >
+    <ng-container *ngFor="let row of grid">
+      <ng-container *ngFor="let cell of row">
+        <div class="cell">
+          <img
+            [src]="
+              cell.state === 'alive'
+                ? 'assets/Thronglet.png'
+                : cell.state === 'dying'
+                ? 'assets/Thronglet_dying.png'
+                : 'assets/empty.png'
+            "
+            alt="Cell"
+          />
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

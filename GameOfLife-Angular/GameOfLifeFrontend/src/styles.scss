@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+/* Global reset */
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-THIN.TTF') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-EXTRALIGHT.TTF') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-LIGHT.TTF') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-BOOK.TTF') format('truetype');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-REGULAR.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-MEDIUM.TTF') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-BOLD.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-BLACK.TTF') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('assets/fonts/Geomanist/GEOMANIST-ULTRA.TTF') format('truetype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #2c2c2c;
+  color: white;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+body, html {
+  font-family: 'Geomanist', sans-serif;
+}
